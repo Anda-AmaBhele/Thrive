@@ -7,3 +7,4 @@ captures/
 .externalNativeBuild/
 .cxx/
 *.keystore
+bdtg73EDD*Kf
