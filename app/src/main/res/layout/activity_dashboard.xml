@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_primary"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good day!"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="spend smart. save more. grow further."
+                    android:textColor="@color/purple_light"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_settings"
+                android:background="@android:color/transparent"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month"
+            android:textColor="@color/purple_light"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/tvTotalSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R0.00"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvBudgetTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ R4,000.00"
+                android:textColor="@color/purple_light"
+                android:textSize="15sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBudget"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="10dp"
+            android:progress="0"
+            android:progressTint="@color/white"
+            android:progressBackgroundTint="@color/purple_dark"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/cat_food" android:gravity="center_vertical"
+                    android:padding="14dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🍔  Food"
+                        android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvFoodAmount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="R0.00"
+                        android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:layout_marginBottom="8dp" app:cardCornerRadius="14dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/cat_transport" android:gravity="center_vertical"
+                    android:padding="14dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🚗  Transport"
+                        android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvTransportAmount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="R0.00"
+                        android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:layout_marginBottom="8dp" app:cardCornerRadius="14dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/cat_entertainment" android:gravity="center_vertical"
+                    android:padding="14dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🎬  Entertainment"
+                        android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvEntertainmentAmount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="R0.00"
+                        android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:layout_marginBottom="8dp" app:cardCornerRadius="14dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/cat_data" android:gravity="center_vertical"
+                    android:padding="14dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="📱  Data"
+                        android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvDataAmount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="R0.00"
+                        android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:layout_marginBottom="8dp" app:cardCornerRadius="14dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/cat_groceries" android:gravity="center_vertical"
+                    android:padding="14dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🛒  Groceries"
+                        android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvGroceriesAmount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="R0.00"
+                        android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:layout_marginBottom="8dp" app:cardCornerRadius="14dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/cat_utilities" android:gravity="center_vertical"
+                    android:padding="14dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="💡  Utilities"
+                        android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvUtilitiesAmount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="R0.00"
+                        android:textColor="@color/white" android:textSize="14sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/purple_primary"
+        app:itemTextColor="@color/purple_primary"
+        app:labelVisibilityMode="labeled"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/purple_primary"
+        app:tint="@color/white"/>
+
+</LinearLayout>

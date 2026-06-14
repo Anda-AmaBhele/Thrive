@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Thrive</string>
+    <string name="goal_image_preview">Goal image preview</string>
+    <string name="add_photo">📷 Add Photo</string>
+    <string name="back_button">Back</string>
+    <string name="savings_goals">Savings Goals</string>
+    <string name="hint_goal_name">Goal name (e.g. New Phone)</string>
+    <string name="hint_target_amount">Target amount (R)</string>
+    <string name="hint_target_date">Target date (yyyy-mm-dd)</string>
+    <string name="set_reminder">Set reminder on target date</string>
+    <string name="add_goal">ADD GOAL</string>
+    <string name="my_goals">My Goals</string>
+</resources>
