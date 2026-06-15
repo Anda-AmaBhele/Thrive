@@ -76,8 +76,9 @@ The workflow file is located at `.github/workflows/build.yml`
 
 ## 📹 Demo Video
 > Link will be added here after recording
-
----
+## Demo Video
+[
+](https://youtu.be/3MKHKnQtoD4)#---
 
 ## 🚀 How to Run
 1. Clone the repository: `git clone https://github.com/Anda-AmaBhele/Thrive.git`
