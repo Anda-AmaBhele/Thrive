@@ -90,3 +90,5 @@ The workflow file is located at `.github/workflows/build.yml`
 - Android Developers. (2026). SQLite database overview. https://developer.android.com/training/data-storage/sqlite
 - Material Design. (2026). Material Design 3 guidelines. https://m3.material.io/
 - MPAndroidChart. https://github.com/PhilJay/MPAndroidChart
+## Research, Planning & Design
+See [Research, Planning and Design Report](docs/Research_Planning_Design_Report.pdf) for app research, design decisions, screen wireframes, and project plan.
