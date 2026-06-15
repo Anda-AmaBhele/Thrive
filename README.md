@@ -1,4 +1,6 @@
-# Thrive 🌱
+## Demo Video
+[
+](https://youtu.be/3MKHKnQtoD4)# Thrive 🌱
 ### *spend smart. save more. grow further.*
 
 Thrive is a personal finance tracker Android app built for South African users who are beginning their journey to financial independence.
